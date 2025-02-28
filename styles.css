@@ -134,8 +134,23 @@ botton:haver {
   .tecno button {
     font-size: small;
     border-radius: 8px;
+
   }
- .button button {
-    gap: 5%;
+ .btn-proyect{
+margin: 4%;
+color: #396df2;
  }
  
+ .sobre-mi {
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 87vh;
+    padding: 1.5rem;
+    gap: 1.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+    
+    
