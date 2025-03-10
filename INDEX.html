@@ -6,17 +6,22 @@
     <title> LEYDI </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    
+<body> 
     <header>
-        <h2> My logo </h2>
-        <a href="#" class="fa-solid fa-bars"></a>
-
+        <h2> I6o6 </h2>
+        <nav class="topnav" id="myTopnav">
+            <div class="nav-links">
+              <a href="#proyectos" class="portfolio-link">Proyectos</a>
+              <a href="#sobre-mi">Sobre-mi</a>
+              <a href="#contactame">Contactame</a>
+            </div>
+            <a href="javascript:void(0);" class="icon fa fa-bars" onclick="myFunction()"></a>
+        </nav>
     </header>
     <main>
         <section class="home">
@@ -30,30 +35,31 @@
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </ul>
-               <button> CANTACTAME </button>  
         </section>
         <section class="proyectos">
             <div class="card">
                 <img src="imagen/Snapshoot Portfolio.svg" alt="Gato" style="width: 100%;">
-                <h1>Tonic</h1>
-                <ul>
+                  <h1>Tonic</h1>
+                  <ul>
                     <li  class="fa-solid fa-circle-small"> Canopy </li>
                     <li class="fa-solid fa-circle"> Back en dev </li>
                     <li class="fa-solid fa-circle"> 2015 </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aspernatur voluptatem modi excepturi unde non voluptatibus, ex animi, esse dolorum consectetur. Alias autem itaque porro modi ipsa labore dolor consequuntur!</p>
-                 <div class="tecno">
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aspernatur voluptatem modi excepturi unde non voluptatibus, ex animi, esse dolorum consectetur. Alias autem itaque porro modi ipsa labore dolor consequuntur!</p>
+                  <div class="tecno">
                     <button class="button button1">HTML</button>
                     <button class="button button2">CSS</button>
                     <button class="button button3">JavaScript</button>   
-                 </div>
-                 <div class="button">
+                  </div>
+                  <div class="button">
                     <button class="button btn-proyect"> See projec</button>
-                 </div>
+                  </div>
+                
+
             </div>
            
         </section>
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <div class="card">
                 <img src="imagen/imagen 2.svg" alt="Gato" style="width: 100%;">
                 <h1>Multi-Post
@@ -74,11 +80,9 @@
                  </div>
             </div>
            
-        </section>
-        <section class="proyectos">
             <div class="card">
                 <img src="imagen/imagen 3.svg" alt="Gato" style="width: 100%;">
-                <h1>Tonic</h1>
+                <h1>Tonic 2</h1>
                 <ul>
                     <li  class="fa-solid fa-circle-small"> Canopy </li>
                     <li class="fa-solid fa-circle"> Back en dev </li>
@@ -95,12 +99,11 @@
                  </div>
             </div>
            
-        </section>
-        <section class="proyectos">
+       
             <div class="card">
                 <img src="imagen/iomagen 4.svg" alt="Gato" style="width: 100%;">
                 <h1>Multi-Post
-                    Stories</h1>
+                    Stories 2</h1>
                 <ul>
                     <li  class="fa-solid fa-circle-small"> Canopy </li>
                     <li class="fa-solid fa-circle"> Back en dev </li>
@@ -118,7 +121,7 @@
             </div>
            
         </section>
-        <section class="sobre-mi">
+        <section class="sobre-mi" id="sobre-mi">
             <h1> About Myself</h1>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo voluptatum ad dolorem dolor eius, inventore possimus animi non atque deserunt repellat eaque omnis iusto voluptates laborum sit suscipit iste exercitationem.</p>
             <h3> Contactame</h3>
@@ -131,6 +134,48 @@
             </ul>
                <button> CANTACTAME </button>  
         </section>
-        </main>    
+        <section id="contactame"></section>
+        <section class="formulary" id="contact">
+            <div class="space"></div>
+            <div class="cont-form">
+              <div class="form-header">
+                <h2 class="getStar">Contactate conmigo</h2>
+                <p class="textAbout">I will work with you to discover what you need and create the best solution. My
+                  priorities
+                  are delivering quality work and respect for deadlines. I love to share my enthusiasm and passion for
+                  design,
+                  so feel free to contact me.</p>
+              </div>
+              <form id="myForm" class="b" action="https://formspree.io/f/xnqrlgak" method="post" >
+                <div class="boxForm">
+                  <label class="form-name" for="name">
+                    Your name
+                    <input class="form-name-contend" type="text" id="name" name="user-name" maxlength="30" required>
+                  </label>
+                  <label class="form-name" for="email">
+                    <div class="alert">
+                      <p>Your email</p>
+                      <p class="error-message">Ups, use only lower case</p>
+                    </div>
+                    <input class="form-name-contend" type="email" id="email" name="user_email" required>
+                  </label>
+                  <label class="form-name-text">
+                    <textarea id="textform" class="form-text" name="user_message" placeholder="Enter your message here..."
+                      maxlength="500" required></textarea>
+                  </label>
+                </div>
+      
+                <div class="button botonform">
+                  <button class="blackBoton textBoton" type="submit">
+                    Star collaboration
+                  </button>
+                </div>
+      
+              </form>
+            </div>
+          </section>
+        </main>  
+        <script src="app.js"></script>  
 </body>
 </html>
+
