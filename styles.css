@@ -8,6 +8,7 @@ body {
   font-family: "poppins", serif;
 }
 
+
 h2 {
     color: #6070ff;
     font-weight: 700;
@@ -36,7 +37,7 @@ header a:hover {
 }
 
 .fa-bars {
-    color: #6070ff;
+    color: #e750ba;
 }
 
 .home{
@@ -67,7 +68,7 @@ h1:hover {
 .home p{
  font-weight: 400;
  font-size: 1rem;
- color: #344563;
+ color: #000000;
 }
 
 h3{
@@ -86,6 +87,7 @@ ul{
     padding: 0px;
     display: flex;
     gap: 20px;
+    color: #4CAF50;
 }
 
 button {
@@ -115,6 +117,8 @@ botton:haver {
     text-align: center;
     cursor: pointer;
     font-size: 18px;
+    border-radius: 20%;
+    border: none;
   }
   
   .card button:hover {

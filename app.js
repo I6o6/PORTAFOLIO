@@ -53,21 +53,24 @@ document.querySelectorAll('.topnav .nav-links a').forEach(link => {
 
 // validacion de email antes de envio de formulario
 
-let errorMessage = document.querySelector('.error-message');
-let form = document.getElementById('contact');
-let email = document.getElementById('email');
-let emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact');
+  const email = document.getElementById('email');
+  const errorMessage = document.querySelector('.error-message');
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
 
-form.addEventListener('submit', (e) => {
-  if (!emailRegex.test(email.value)) {
-    e.preventDefault();
-    errorMessage.style.display = 'block';
-    email.style.border = '#dd5353 2px solid';
-  } else {
-    errorMessage.style.display = 'none';
-    email.style.border = '';
-  }
+  form.addEventListener('submit', (e) => {
+    if (!emailRegex.test(email.value)) {
+      e.preventDefault();
+      errorMessage.style.display = 'block';
+      email.style.border = '#dd5353 2px solid';
+    } else {
+      errorMessage.style.display = 'none';
+      email.style.border = '';
+    }
+  });
 });
+
 // local storage
 
 let localData = {
